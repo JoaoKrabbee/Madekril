@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    line-height: 1.4;
+}
+.body{
+    margin: 0 13% 0 13%;
+}
+header{
+    position: sticky;
+    top: 0;}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.container-whats{
+    background-color: yellow;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40%;
+    width: 75px;
+    height: 75px;
+    bottom: 20px;
+    right: 20px;
+}   
+.container-whats img{
+    width: 50px;
+}
+
+.container_header{
+    background-color: #3d4670;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    padding-left: 13%;
+    padding-right: 13%;
+}
+.container_header h1{
+    font-size: 7ch;
+}
+.li li{
+    margin-left: 60px;
+    display: inline-flex;
+    list-style: none;
+    font-size: 2ch;
+}
+.container_header a:hover{
+    font-size: large;
+}
+
+.container_galeria{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 20vw;
+    grid-gap: 20px;
+    margin-top: 7vh;
+    margin-bottom: 6vw;
+}
+.item_galeria .img_galeria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.h-2{
+    grid-row: span 2;
+}
+.w-2{
+    grid-column: span 2;
+}
+
+.container-produtos{
+    background-color: #3d4670;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    padding: 3vw 13% 3vw 13%;
+}
+.img-produto{
+    width: 12vw;
+    margin-left: 20px;
+    border-radius: 5%;
+}
+.texto-produto{
+    max-width: 32vw;
+}
+.texto-produto h2{
+    margin-bottom: 15px;
+}
+.texto-produto a:hover{
+    font-size: large;
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container img{
+    width: 75%;
+    height: 250px;
+}
+.formulario-container{
+    box-sizing: border-box;
+    max-width: 20%;
+    float: right;
+    margin-top: 75px;
+    background-color: #3d4670;
+    padding: 20px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    border-radius: 5%;
+}
+.formulario-container h2{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.formulario-container p{
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+.formulario-container input{
+    width: 100%;
+    height: 35px;
+    border: none;
+    margin-bottom: 5px;
+}
+input[type="submit"]{
+    color: #3d4670;
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.container-footer{
+    padding: 3vw 13% 3vw 13%;
+    background-color: #3d4670;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container-footer li{
+    list-style: none;
+    line-height: 2em;
+}
+.container-footer img{
+    width: 1.2em;
+}
+.container-footer a:hover{
+    text-decoration: underline;
+}
+
+.voltar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    border-radius: 40%;
+    width: 60px;
+    height: 60px;
+}
+
+.freepik{
+    background-color: #3d4670;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1345px) {
+    .body{
+        margin: 0 3% 0 3%;
+    }
+    .container-whats{
+        width: 60px;
+        height: 60px;
+    } 
+    .container-whats img{
+        width: 40px;
+    }
+    .container_header{
+        padding-left: 3%;
+        padding-right: 3%;
+        font-size: small;
+    }
+    .container_header a:hover{
+        font-size: small;
+    }
+    .container_galeria{
+        grid-gap: 15px;
+        margin-top: 4vh;
+        margin-bottom: 3vw;
+    }
+    .container-produtos{
+        padding: 2vw 3% 2vw 3%;
+        font-size: small;
+    }
+    .img-produto{
+        width: 14vw;
+    }
+    .logo-container img{
+        width: 65%;
+        height: 200px;
+    }
+    .formulario-container{
+        max-width: 25%;
+        margin-top: 50px;
+        padding: 15px;
+        margin-bottom: 85px;
+        border-radius: 5%;
+    }
+    .container-footer{
+        padding: 2vw 3% 2vw 3%;
+    }
+    .voltar{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .container_header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    }
+    .container_header h1{
+        font-size: 9ch;
+    }
+    .li li{
+        margin-right: 25px;
+        margin-left: 25px;
+        display: inline-block;
+    }
+    .container_galeria{
+        grid-auto-rows: 30vw;
+        grid-gap: 10px;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
+    .container-produtos{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 10px;
+    }
+    .img-produto{
+        width: 20vw;
+        margin: 10px 10px 0 10px;
+        border-radius: 5%;
+    }
+    .texto-produto{
+        max-width: 100%;
+    }
+    .texto-produto a:hover{
+        font-size: medium;
+    }
+    .logo-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo-container img{
+        margin-top: 30px;
+        width: 100%;
+        height: 100%;
+    }
+    .formulario-container{
+        max-width: 65%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .formulario-container h2{
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .formulario-container p{
+        font-size: 10px;
+    }
+    .formulario-container input{
+        width: 100%;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 12px;
+    }
+    .container-footer img{
+        width: 1em;
+    }
+    .voltar{
+        flex-direction: row;
+        width: 50px;
+        height: 50px;
+    }
+}
